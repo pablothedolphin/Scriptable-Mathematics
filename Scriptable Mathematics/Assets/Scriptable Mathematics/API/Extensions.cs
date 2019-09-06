@@ -84,6 +84,31 @@ namespace ScriptableFramework.Mathematics
 		/// <summary>
 		/// 
 		/// </summary>
+		/// <param name="list"></param>
+		/// <param name="items"></param>
+		public static void Initialise (this Float3List list, IEnumerable<Vector3> items)
+		{
+			list.Clear ();
+
+			list.AddRange (items);
+		}
+
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="list"></param>
+		/// <param name="items"></param>
+		public static void AddRange (this Float3List list, IEnumerable<Vector3> items)
+		{
+			foreach (Vector3 item in items)
+			{
+				list.Add (item);
+			}
+		}
+
+		/// <summary>
+		/// 
+		/// </summary>
 		/// <param name="array"></param>
 		/// <returns></returns>
 		public static float3[] ToFloat3Array (this Vector3[] array)
