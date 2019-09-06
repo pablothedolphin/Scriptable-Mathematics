@@ -1,0 +1,19 @@
+/*
+
+/*/
+
+!.gitignore
+!README.md
+
+# Include the main folders needed
+!Scriptable Mathematics/
+!docs/
+!docfx/
+
+# Ignore everything inside project folder
+Scriptable Mathematics/*
+
+# Select which folders become included
+!Scriptable Mathematics/Assets/
+!Scriptable Mathematics/ProjectSettings/
+!Scriptable Mathematics/Packages/
