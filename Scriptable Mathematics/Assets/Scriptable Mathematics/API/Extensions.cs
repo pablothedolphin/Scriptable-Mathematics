@@ -55,5 +55,30 @@ namespace ScriptableFramework.Mathematics
 		{
 			return new NativeArray<float3> (list.ToFloat3Array (), allocator);
 		}
+
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="list"></param>
+		/// <param name="items"></param>
+		public static void Initialise (this Vector3List list, IEnumerable<float3> items)
+		{
+			list.Clear ();
+
+			list.AddRange (items);
+		}
+
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="list"></param>
+		/// <param name="items"></param>
+		public static void AddRange (this Vector3List list, IEnumerable<float3> items)
+		{
+			foreach (float3 item in items)
+			{
+				list.Add (item);
+			}
+		}
 	}
 }

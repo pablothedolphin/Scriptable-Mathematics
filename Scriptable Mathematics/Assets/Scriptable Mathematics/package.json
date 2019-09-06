@@ -2,7 +2,7 @@
   "name": "com.open.scriptable-mathematics",
   "displayName": "Scriptable Mathematics",
   "author": "Jak Hussain",
-  "version": "0.1.1-preview",
+  "version": "0.1.2-preview",
   "unity": "2018.3",
   "description": "An extension to Scriptable Framework which depends on the Unity Mathematics library. Offers convenient tools like a ValueList of float3s.",
   "keywords": [
