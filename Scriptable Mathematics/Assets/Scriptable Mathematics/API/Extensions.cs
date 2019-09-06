@@ -80,5 +80,39 @@ namespace ScriptableFramework.Mathematics
 				list.Add (item);
 			}
 		}
+
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="array"></param>
+		/// <returns></returns>
+		public static float3[] ToFloat3Array (this Vector3[] array)
+		{
+			float3[] newArray = new float3[array.Length];
+
+			for (int i = 0; i < array.Length; i++)
+			{
+				newArray[i] = array[i];
+			}
+
+			return newArray;
+		}
+
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="array"></param>
+		/// <returns></returns>
+		public static Vector3[] ToVector3Array (this NativeArray<float3> array)
+		{
+			Vector3[] newArray = new Vector3[array.Length];
+
+			for (int i = 0; i < array.Length; i++)
+			{
+				newArray[i] = array[i];
+			}
+
+			return newArray;
+		}
 	}
 }
